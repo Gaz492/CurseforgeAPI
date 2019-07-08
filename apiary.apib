@@ -1683,8 +1683,8 @@ If you would like to submit any changes please make a pull request at https://gi
 
 	"2019-06-09T23:34:29.103Z"
 
-## Get Minecraft Version [/api/v2/minecraft/version]
-### Get Minecraft Version [GET]
+## Get Minecraft Versions List [/api/v2/minecraft/version]
+### Get Minecraft Versions List [GET]
 
 + Response 200 (application/json)
 
@@ -1726,6 +1726,26 @@ If you would like to submit any changes please make a pull request at https://gi
 		"gameVersionTypeStatus": 1
 	  }
 	]
+
+## Get Minecraft Version Info [/api/v2/minecraft/modloader/{VersionString}]
+### Get Minecraft Version Info [GET]
++ Parameters
+	+ VersionString: `1.12.2` (string)
+    
++ Response 200 (application/json)
+
+	{
+	  "id": 52,
+	  "gameVersionId": 6756,
+	  "versionString": "1.12.2",
+	  "jarDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.jar",
+	  "jsonDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.json",
+	  "approved": false,
+	  "dateModified": "2018-03-29T17:24:38.393Z",
+	  "gameVersionTypeId": 628,
+	  "gameVersionStatus": 1,
+	  "gameVersionTypeStatus": 1
+	}
 
 ## Get Modloader Timestamp [/api/v2/minecraft/modloader/timestamp]
 ### Get Modloader Timestamp [GET]

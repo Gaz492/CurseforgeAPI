@@ -1914,7 +1914,7 @@ If you would like to submit any changes please make a pull request at https://gi
 	  }
 	]
 
-## Get Category Info [/api/v2/v2/category/{Categoryid}]
+## Get Category Info [/api/v2/category/{Categoryid}]
 ### Get Category Info [GET]
 + Parameters
 	+ Categoryid: `423` (integer)
@@ -1932,6 +1932,46 @@ If you would like to submit any changes please make a pull request at https://gi
 	  "gameId": 432
 	}
 
+## Get Category Section Info [/api/v2/category/section/{SectionID}]
+### Get Category Section Info [GET]
++ Parameters
+	+ SectionID: `6` (integer)
+    
++ Response 200 (application/json)
+
+	[
+	  {
+	    "id": 423,
+	    "name": "Map and Information",
+	    "slug": "map-information",
+	    "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+	    "dateModified": "2014-05-08T17:42:23.74Z",
+	    "parentGameCategoryId": 6,
+	    "rootGameCategoryId": 6,
+	    "gameId": 432
+	  },
+	  {
+	    "id": 426,
+	    "name": "Addons",
+	    "slug": "mc-addons",
+	    "avatarUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
+	    "dateModified": "2014-05-08T17:09:48.63Z",
+	    "parentGameCategoryId": 6,
+	    "rootGameCategoryId": 6,
+	    "gameId": 432
+	  },
+	  {
+	    "id": 434,
+	    "name": "Armor, Tools, and Weapons",
+	    "slug": "armor-weapons-tools",
+	    "avatarUrl": "https://media.forgecdn.net/avatars/6/47/635351498790409758.png",
+	    "dateModified": "2014-05-08T17:44:39.057Z",
+	    "parentGameCategoryId": 6,
+	    "rootGameCategoryId": 6,
+	    "gameId": 432
+	  }
+	 ]
+
 ## Get Game Timestamp [/api/v2/game/timestamp]
 ### Get Game Timestamp [GET]
 
@@ -1939,8 +1979,11 @@ If you would like to submit any changes please make a pull request at https://gi
 
 	"2019-06-09T23:34:29.103Z"
 
-## Get Games List [/api/v2/game]
+## Get Games List [/api/v2/game{?supportsAddons}]
 ### Get Games List [GET]
++ Parameters
+	+ supportsAddons (boolean, optional)
+		+ Default: 'true'
 
 + Response 200 (application/json)
 
@@ -2386,11 +2429,11 @@ If you would like to submit any changes please make a pull request at https://gi
 	  }
 	]
 
-## Get Game Info [/api/v2/v2/game/{GameID}]
+## Get Game Info [/api/v2/game/{GameID}]
 ### Get Game Info [GET]
 + Parameters
 	+ GameID: `432` (integer)
-    
+
 + Response 200 (application/json)
 
 	{
@@ -2476,3 +2519,13 @@ If you would like to submit any changes please make a pull request at https://gi
 	  "twitchGameId": 27471,
 	  "clientGameSettingsId": 24
 	}
+
+## Elerium AddonClientService []
+### Elerium AddonClientService [GET]
++ Request Plain Text Message
+    + Headers
+            Accept: text/plain
+
++ Response 200 (text/plain)
+	+ Body
+		Elerium AddonClientService (50f50c7)

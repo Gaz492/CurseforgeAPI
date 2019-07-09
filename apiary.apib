@@ -1902,6 +1902,25 @@ If you would like to submit any changes please make a pull request at https://gi
 	  }
 	]
 
+GET	https://addons-ecs.forgesvc.net/api/v2/category/{Categoryid}
+## Get Minecraft Version Info [/api/v2/v2/category/{Categoryid}]
+### Get Minecraft Version Info [GET]
++ Parameters
+	+ Categoryid: `423` (integer)
+    
++ Response 200 (application/json)
+
+	{
+	  "id": 423,
+	  "name": "Map and Information",
+	  "slug": "map-information",
+	  "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+	  "dateModified": "2014-05-08T17:42:23.74Z",
+	  "parentGameCategoryId": 6,
+	  "rootGameCategoryId": 6,
+	  "gameId": 432
+	}
+
 ## Get Game Timestamp [/api/v2/game/timestamp]
 ### Get Game Timestamp [GET]
 
@@ -2355,3 +2374,95 @@ If you would like to submit any changes please make a pull request at https://gi
 		"clientGameSettingsId": 1
 	  }
 	]
+
+GET	https://addons-ecs.forgesvc.net/api/v2/game/{GameID}
+## Get Minecraft Version Info [/api/v2/v2/game/{GameID}]
+### Get Minecraft Version Info [GET]
++ Parameters
+	+ GameID: `432` (integer)
+    
++ Response 200 (application/json)
+
+	{
+	  "id": 432,
+	  "name": "Minecraft",
+	  "slug": "minecraft",
+	  "dateModified": "2019-06-26T15:49:27.81Z",
+	  "gameFiles": [
+		{
+		  "id": 34,
+		  "gameId": 432,
+		  "isRequired": true,
+		  "fileName": "instance.json",
+		  "fileType": 3,
+		  "platformType": 4
+		}
+	  ],
+	  "gameDetectionHints": [
+		{
+		  "id": 9,
+		  "hintType": 2,
+		  "hintPath": "%Public%\\Games\\Minecraft",
+		  "hintKey": null,
+		  "hintOptions": 0,
+		  "gameId": 432
+		}
+	  ],
+	  "fileParsingRules": [],
+	  "categorySections": [
+		{
+		  "id": 9,
+		  "gameId": 432,
+		  "name": "Texture Packs",
+		  "packageType": 3,
+		  "path": "resourcepacks",
+		  "initialInclusionPattern": "([^\\/\\\\]+\\.zip)$",
+		  "extraIncludePattern": "([^\\/\\\\]+\\.zip)$",
+		  "gameCategoryId": 12
+		},
+		{
+		  "id": 11,
+		  "gameId": 432,
+		  "name": "Modpacks",
+		  "packageType": 5,
+		  "path": "downloads",
+		  "initialInclusionPattern": "$^",
+		  "extraIncludePattern": null,
+		  "gameCategoryId": 4471
+		},
+		{
+		  "id": 8,
+		  "gameId": 432,
+		  "name": "Mods",
+		  "packageType": 6,
+		  "path": "mods",
+		  "initialInclusionPattern": ".",
+		  "extraIncludePattern": null,
+		  "gameCategoryId": 6
+		},
+		{
+		  "id": 10,
+		  "gameId": 432,
+		  "name": "Worlds",
+		  "packageType": 1,
+		  "path": "saves",
+		  "initialInclusionPattern": ".",
+		  "extraIncludePattern": null,
+		  "gameCategoryId": 17
+		}
+	  ],
+	  "maxFreeStorage": 0,
+	  "maxPremiumStorage": 0,
+	  "maxFileSize": 0,
+	  "addonSettingsFolderFilter": null,
+	  "addonSettingsStartingFolder": null,
+	  "addonSettingsFileFilter": null,
+	  "addonSettingsFileRemovalFilter": null,
+	  "supportsAddons": true,
+	  "supportsPartnerAddons": false,
+	  "supportedClientConfiguration": 3,
+	  "supportsNotifications": true,
+	  "profilerAddonId": 0,
+	  "twitchGameId": 27471,
+	  "clientGameSettingsId": 24
+	}

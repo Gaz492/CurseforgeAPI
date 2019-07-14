@@ -1693,839 +1693,829 @@ If you would like to submit any changes please make a pull request at https://gi
 
 + Response 200 (application/json)
 
-	"2019-06-09T23:34:29.103Z"
+        "2019-06-09T23:34:29.103Z"
 
 ## Get Minecraft Version List [/api/v2/minecraft/version]
 ### Get Minecraft Version List [GET]
 
 + Response 200 (application/json)
 
-	[
-	  {
-		"id": 60,
-		"gameVersionId": 7413,
-		"versionString": "1.14.3",
-		"jarDownloadUrl": "https://launcher.mojang.com/v1/objects/af100b34ec7ef2b8b9cf7775b544d21d690dddec/client.jar",
-		"jsonDownloadUrl": "https://launchermeta.mojang.com/v1/packages/2b9823a8699fb6811acd1f553c5bee009d30f64e/1.14.3.json",
-		"approved": false,
-		"dateModified": "2019-06-24T15:46:57Z",
-		"gameVersionTypeId": 64806,
-		"gameVersionStatus": 1,
-		"gameVersionTypeStatus": 1
-	  },
-	  {
-		"id": 52,
-		"gameVersionId": 6756,
-		"versionString": "1.12.2",
-		"jarDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.jar",
-		"jsonDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.json",
-		"approved": false,
-		"dateModified": "2018-03-29T17:24:38.393Z",
-		"gameVersionTypeId": 628,
-		"gameVersionStatus": 1,
-		"gameVersionTypeStatus": 1
-	  },
-	  {
-		"id": 31,
-		"gameVersionId": 4482,
-		"versionString": "1.0",
-		"jarDownloadUrl": "http://s3.amazonaws.com/Minecraft.Download/versions/1.0/1.0.jar",
-		"jsonDownloadUrl": "http://s3.amazonaws.com/Minecraft.Download/versions/1.0/1.0.json",
-		"approved": false,
-		"dateModified": "2018-03-29T17:24:38.393Z",
-		"gameVersionTypeId": 16,
-		"gameVersionStatus": 3,
-		"gameVersionTypeStatus": 1
-	  }
-	]
+        [
+        {
+            "id": 60,
+            "gameVersionId": 7413,
+            "versionString": "1.14.3",
+            "jarDownloadUrl": "https://launcher.mojang.com/v1/objects/af100b34ec7ef2b8b9cf7775b544d21d690dddec/client.jar",
+            "jsonDownloadUrl": "https://launchermeta.mojang.com/v1/packages/2b9823a8699fb6811acd1f553c5bee009d30f64e/1.14.3.json",
+            "approved": false,
+            "dateModified": "2019-06-24T15:46:57Z",
+            "gameVersionTypeId": 64806,
+            "gameVersionStatus": 1,
+            "gameVersionTypeStatus": 1
+        },
+        {
+            "id": 52,
+            "gameVersionId": 6756,
+            "versionString": "1.12.2",
+            "jarDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.jar",
+            "jsonDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.json",
+            "approved": false,
+            "dateModified": "2018-03-29T17:24:38.393Z",
+            "gameVersionTypeId": 628,
+            "gameVersionStatus": 1,
+            "gameVersionTypeStatus": 1
+        },
+        {
+            "id": 31,
+            "gameVersionId": 4482,
+            "versionString": "1.0",
+            "jarDownloadUrl": "http://s3.amazonaws.com/Minecraft.Download/versions/1.0/1.0.jar",
+            "jsonDownloadUrl": "http://s3.amazonaws.com/Minecraft.Download/versions/1.0/1.0.json",
+            "approved": false,
+            "dateModified": "2018-03-29T17:24:38.393Z",
+            "gameVersionTypeId": 16,
+            "gameVersionStatus": 3,
+            "gameVersionTypeStatus": 1
+        }
+        ]
 
 ## Get Minecraft Version Info [/api/v2/minecraft/version/{VersionString}]
 ### Get Minecraft Version Info [GET]
 + Parameters
-	+ VersionString: `1.12.2` (string)
+    + VersionString: `1.12.2` (string)
     
 + Response 200 (application/json)
 
-	{
-	  "id": 52,
-	  "gameVersionId": 6756,
-	  "versionString": "1.12.2",
-	  "jarDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.jar",
-	  "jsonDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.json",
-	  "approved": false,
-	  "dateModified": "2018-03-29T17:24:38.393Z",
-	  "gameVersionTypeId": 628,
-	  "gameVersionStatus": 1,
-	  "gameVersionTypeStatus": 1
-	}
+        {
+        "id": 52,
+        "gameVersionId": 6756,
+        "versionString": "1.12.2",
+        "jarDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.jar",
+        "jsonDownloadUrl": "https://s3.amazonaws.com/Minecraft.Download/versions/1.12.2/1.12.2.json",
+        "approved": false,
+        "dateModified": "2018-03-29T17:24:38.393Z",
+        "gameVersionTypeId": 628,
+        "gameVersionStatus": 1,
+        "gameVersionTypeStatus": 1
+        }
 
 ## Get Modloader Timestamp [/api/v2/minecraft/modloader/timestamp]
 ### Get Modloader Timestamp [GET]
 
 + Response 200 (application/json)
 
-	"2019-06-09T23:34:29.103Z"
-		
+        "2019-06-09T23:34:29.103Z"
+        
 ## Get Modloader List [/api/v2/minecraft/modloader]
 ### Get Modloader List [GET]
 
 + Response 200 (application/json)
 
-	[
-	  {
-		"name": "forge-9.11.1.965",
-		"gameVersion": "1.6.4",
-		"latest": false,
-		"recommended": false,
-		"dateModified": "2017-01-01T00:00:00Z"
-	  },
-	  {
-		"name": "forge-14.23.5.2768",
-		"gameVersion": "1.12.2",
-		"latest": false,
-		"recommended": true,
-		"dateModified": "2018-10-04T07:48:00Z"
-	  },
-	  {
-		"name": "forge-14.23.5.2838",
-		"gameVersion": "1.12.2",
-		"latest": true,
-		"recommended": false,
-		"dateModified": "2019-05-13T17:02:00Z"
-	  },
-	  {
-		"name": "forge-12.17.0.1980",
-		"gameVersion": "1.9.4",
-		"latest": true,
-		"recommended": true,
-		"dateModified": "2017-01-01T00:00:00Z"
-	  }
-	]
+        [
+        {
+            "name": "forge-9.11.1.965",
+            "gameVersion": "1.6.4",
+            "latest": false,
+            "recommended": false,
+            "dateModified": "2017-01-01T00:00:00Z"
+        },
+        {
+            "name": "forge-14.23.5.2768",
+            "gameVersion": "1.12.2",
+            "latest": false,
+            "recommended": true,
+            "dateModified": "2018-10-04T07:48:00Z"
+        },
+        {
+            "name": "forge-14.23.5.2838",
+            "gameVersion": "1.12.2",
+            "latest": true,
+            "recommended": false,
+            "dateModified": "2019-05-13T17:02:00Z"
+        },
+        {
+            "name": "forge-12.17.0.1980",
+            "gameVersion": "1.9.4",
+            "latest": true,
+            "recommended": true,
+            "dateModified": "2017-01-01T00:00:00Z"
+        }
+        ]
 
 ## Get Modloader Info [/api/v2/minecraft/modloader/{VersionName}]
 ### Get Modloader Info [GET]
 + Parameters
-	+ VersionName: `forge-12.17.0.1980` (string)
+    + VersionName: `forge-12.17.0.1980` (string)
     
 + Response 200 (application/json)
 
-	{
-	  "id": 2971,
-	  "gameVersionId": 6166,
-	  "minecraftGameVersionId": 42,
-	  "forgeVersion": "12.17.0.1980",
-	  "name": "forge-12.17.0.1980",
-	  "type": 1,
-	  "downloadUrl": "https://modloaders.cursecdn.com/647622546/maven/net/minecraftforge/forge/1.9.4-12.17.0.1980-1.10.0/forge-1.9.4-12.17.0.1980-1.10.0.jar",
-	  "filename": "forge-1.9.4-12.17.0.1980-1.10.0.jar",
-	  "installMethod": 1,
-	  "latest": true,
-	  "recommended": true,
-	  "approved": false,
-	  "dateModified": "2017-01-01T00:00:00Z",
-	  "mavenVersionString": "net.minecraftforge:forge:1.9.4-12.17.0.1980-1.10.0",
-	  "versionJson": "{\r\n  \"id\": \"forge-12.17.0.1980\",\r\n  \"time\": \"2016-06-23T04:11:27+0000\",\r\n  \"releaseTime\": \"1960-01-01T00:00:00-0700\",\r\n  \"type\": \"release\",\r\n  \"minecraftArguments\": \"--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --userType ${user_type} --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge\",\r\n  \"minimumLauncherVersion\": 0,\r\n  \"inheritsFrom\": \"1.9.4\",\r\n  \"jar\": \"forge-12.17.0.1980\",\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.9.4-12.17.0.1980-1.10.0\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\"\r\n    },\r\n    {\r\n      \"name\": \"net.minecraft:launchwrapper:1.12\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-all:5.0.3\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"jline:jline:2.13\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": false\r\n    },\r\n    {\r\n      \"name\": \"com.typesafe.akka:akka-actor_2.11:2.3.3\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"com.typesafe:config:1.2.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-actors-migration_2.11:1.1.0\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-compiler:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-library:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-parser-combinators_2.11:1.0.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-reflect:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-swing_2.11:1.0.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-xml_2.11:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"lzma:lzma:0.0.1\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:4.6\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"java3d:vecmath:1.5.2\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"net.sf.trove4j:trove4j:3.0.3\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    }\r\n  ],\r\n  \"mainClass\": \"net.minecraft.launchwrapper.Launch\"\r\n}",
-	  "librariesInstallLocation": "{0}\\libraries\\net\\minecraftforge\\forge\\1.9.4-12.17.0.1980-1.10.0",
-	  "minecraftVersion": "1.9.4",
-	  "additionalFilesJson": null,
-	  "modLoaderGameVersionId": 6166,
-	  "modLoaderGameVersionTypeId": 3,
-	  "modLoaderGameVersionStatus": 3,
-	  "modLoaderGameVersionTypeStatus": 1,
-	  "mcGameVersionId": 6084,
-	  "mcGameVersionTypeId": 552,
-	  "mcGameVersionStatus": 1,
-	  "mcGameVersionTypeStatus": 1,
-	  "installProfileJson": null
-	}
+        {
+        "id": 2971,
+        "gameVersionId": 6166,
+        "minecraftGameVersionId": 42,
+        "forgeVersion": "12.17.0.1980",
+        "name": "forge-12.17.0.1980",
+        "type": 1,
+        "downloadUrl": "https://modloaders.cursecdn.com/647622546/maven/net/minecraftforge/forge/1.9.4-12.17.0.1980-1.10.0/forge-1.9.4-12.17.0.1980-1.10.0.jar",
+        "filename": "forge-1.9.4-12.17.0.1980-1.10.0.jar",
+        "installMethod": 1,
+        "latest": true,
+        "recommended": true,
+        "approved": false,
+        "dateModified": "2017-01-01T00:00:00Z",
+        "mavenVersionString": "net.minecraftforge:forge:1.9.4-12.17.0.1980-1.10.0",
+        "versionJson": "{\r\n  \"id\": \"forge-12.17.0.1980\",\r\n  \"time\": \"2016-06-23T04:11:27+0000\",\r\n  \"releaseTime\": \"1960-01-01T00:00:00-0700\",\r\n  \"type\": \"release\",\r\n  \"minecraftArguments\": \"--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --userType ${user_type} --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge\",\r\n  \"minimumLauncherVersion\": 0,\r\n  \"inheritsFrom\": \"1.9.4\",\r\n  \"jar\": \"forge-12.17.0.1980\",\r\n  \"libraries\": [\r\n    {\r\n      \"name\": \"net.minecraftforge:forge:1.9.4-12.17.0.1980-1.10.0\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\"\r\n    },\r\n    {\r\n      \"name\": \"net.minecraft:launchwrapper:1.12\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.ow2.asm:asm-all:5.0.3\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"jline:jline:2.13\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": false\r\n    },\r\n    {\r\n      \"name\": \"com.typesafe.akka:akka-actor_2.11:2.3.3\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"com.typesafe:config:1.2.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-actors-migration_2.11:1.1.0\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-compiler:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-library:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-parser-combinators_2.11:1.0.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-reflect:2.11.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-swing_2.11:1.0.1\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"org.scala-lang:scala-xml_2.11:1.0.2\",\r\n      \"url\": \"https://modloaders.cursecdn.com/647622546/maven/\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"lzma:lzma:0.0.1\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"net.sf.jopt-simple:jopt-simple:4.6\",\r\n      \"serverreq\": true\r\n    },\r\n    {\r\n      \"name\": \"java3d:vecmath:1.5.2\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    },\r\n    {\r\n      \"name\": \"net.sf.trove4j:trove4j:3.0.3\",\r\n      \"serverreq\": true,\r\n      \"clientreq\": true\r\n    }\r\n  ],\r\n  \"mainClass\": \"net.minecraft.launchwrapper.Launch\"\r\n}",
+        "librariesInstallLocation": "{0}\\libraries\\net\\minecraftforge\\forge\\1.9.4-12.17.0.1980-1.10.0",
+        "minecraftVersion": "1.9.4",
+        "additionalFilesJson": null,
+        "modLoaderGameVersionId": 6166,
+        "modLoaderGameVersionTypeId": 3,
+        "modLoaderGameVersionStatus": 3,
+        "modLoaderGameVersionTypeStatus": 1,
+        "mcGameVersionId": 6084,
+        "mcGameVersionTypeId": 552,
+        "mcGameVersionStatus": 1,
+        "mcGameVersionTypeStatus": 1,
+        "installProfileJson": null
+        }
 
 ## Get Category Timestamp [/api/v2/category/timestamp]
 ### Get Category Timestamp [GET]
 
 + Response 200 (application/json)
 
-	"2019-06-09T23:34:29.103Z"
+        "2019-06-09T23:34:29.103Z"
 
 ## Get Category List [/api/v2/category]
 ### Get Category List [GET]
 
 + Response 200 (application/json)
 
-	[
-	  {
-		"id": 4560,
-		"name": "Worlds",
-		"slug": "worlds",
-		"avatarUrl": "https://media.forgecdn.net/avatars/53/343/636123927730726719.png",
-		"dateModified": "2016-10-20T17:13:05.457Z",
-		"parentGameCategoryId": 4559,
-		"rootGameCategoryId": 4559,
-		"gameId": 432
-	  },
-	  {
-		"id": 4561,
-		"name": "Resource Packs",
-		"slug": "resource-packs",
-		"avatarUrl": "https://media.forgecdn.net/avatars/53/344/636123930026778200.png",
-		"dateModified": "2016-10-20T00:28:27.25Z",
-		"parentGameCategoryId": 4559,
-		"rootGameCategoryId": 4559,
-		"gameId": 432
-	  },
-	  {
-		"id": 4780,
-		"name": "Fabric",
-		"slug": "fabric",
-		"avatarUrl": "https://media.forgecdn.net/avatars/182/502/636808438426582276.png",
-		"dateModified": "2018-12-19T19:17:22.673Z",
-		"parentGameCategoryId": 6,
-		"rootGameCategoryId": 6,
-		"gameId": 432
-	  },
-	  {
-		"id": 4471,
-		"name": "Modpacks",
-		"slug": "modpacks",
-		"avatarUrl": "https://media.forgecdn.net/avatars/52/100/636111139251397737.png",
-		"dateModified": "2016-10-03T22:52:05.14Z",
-		"parentGameCategoryId": null,
-		"rootGameCategoryId": null,
-		"gameId": 432
-	  },
-	  {
-		"id": 12,
-		"name": "Texture Packs",
-		"slug": "texture-packs",
-		"avatarUrl": "https://media.forgecdn.net/avatars/52/102/636111139761599118.png",
-		"dateModified": "2016-10-03T22:52:56.16Z",
-		"parentGameCategoryId": null,
-		"rootGameCategoryId": null,
-		"gameId": 432
-	  },
-	  {
-		"id": 6,
-		"name": "Mods",
-		"slug": "mc-mods",
-		"avatarUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
-		"dateModified": "2018-08-08T19:42:39.42Z",
-		"parentGameCategoryId": null,
-		"rootGameCategoryId": null,
-		"gameId": 432
-	  }
-	]
+        [
+        {
+            "id": 4560,
+            "name": "Worlds",
+            "slug": "worlds",
+            "avatarUrl": "https://media.forgecdn.net/avatars/53/343/636123927730726719.png",
+            "dateModified": "2016-10-20T17:13:05.457Z",
+            "parentGameCategoryId": 4559,
+            "rootGameCategoryId": 4559,
+            "gameId": 432
+        },
+        {
+            "id": 4561,
+            "name": "Resource Packs",
+            "slug": "resource-packs",
+            "avatarUrl": "https://media.forgecdn.net/avatars/53/344/636123930026778200.png",
+            "dateModified": "2016-10-20T00:28:27.25Z",
+            "parentGameCategoryId": 4559,
+            "rootGameCategoryId": 4559,
+            "gameId": 432
+        },
+        {
+            "id": 4780,
+            "name": "Fabric",
+            "slug": "fabric",
+            "avatarUrl": "https://media.forgecdn.net/avatars/182/502/636808438426582276.png",
+            "dateModified": "2018-12-19T19:17:22.673Z",
+            "parentGameCategoryId": 6,
+            "rootGameCategoryId": 6,
+            "gameId": 432
+        },
+        {
+            "id": 4471,
+            "name": "Modpacks",
+            "slug": "modpacks",
+            "avatarUrl": "https://media.forgecdn.net/avatars/52/100/636111139251397737.png",
+            "dateModified": "2016-10-03T22:52:05.14Z",
+            "parentGameCategoryId": null,
+            "rootGameCategoryId": null,
+            "gameId": 432
+        },
+        {
+            "id": 12,
+            "name": "Texture Packs",
+            "slug": "texture-packs",
+            "avatarUrl": "https://media.forgecdn.net/avatars/52/102/636111139761599118.png",
+            "dateModified": "2016-10-03T22:52:56.16Z",
+            "parentGameCategoryId": null,
+            "rootGameCategoryId": null,
+            "gameId": 432
+        },
+        {
+            "id": 6,
+            "name": "Mods",
+            "slug": "mc-mods",
+            "avatarUrl": "https://media.forgecdn.net/avatars/52/101/636111139584399357.png",
+            "dateModified": "2018-08-08T19:42:39.42Z",
+            "parentGameCategoryId": null,
+            "rootGameCategoryId": null,
+            "gameId": 432
+        }
+        ]
 
 ## Get Category Info [/api/v2/category/{Categoryid}]
 ### Get Category Info [GET]
 + Parameters
-	+ Categoryid: `423` (integer)
+    + Categoryid: `423` (integer)
     
 + Response 200 (application/json)
 
-	{
-	  "id": 423,
-	  "name": "Map and Information",
-	  "slug": "map-information",
-	  "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
-	  "dateModified": "2014-05-08T17:42:23.74Z",
-	  "parentGameCategoryId": 6,
-	  "rootGameCategoryId": 6,
-	  "gameId": 432
-	}
+        {
+        "id": 423,
+        "name": "Map and Information",
+        "slug": "map-information",
+        "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+        "dateModified": "2014-05-08T17:42:23.74Z",
+        "parentGameCategoryId": 6,
+        "rootGameCategoryId": 6,
+        "gameId": 432
+        }
 
 ## Get Category Section Info [/api/v2/category/section/{SectionID}]
 ### Get Category Section Info [GET]
 + Parameters
-	+ SectionID: `6` (integer)
+    + SectionID: `6` (integer)
     
 + Response 200 (application/json)
 
-	[
-	  {
-	    "id": 423,
-	    "name": "Map and Information",
-	    "slug": "map-information",
-	    "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
-	    "dateModified": "2014-05-08T17:42:23.74Z",
-	    "parentGameCategoryId": 6,
-	    "rootGameCategoryId": 6,
-	    "gameId": 432
-	  },
-	  {
-	    "id": 426,
-	    "name": "Addons",
-	    "slug": "mc-addons",
-	    "avatarUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
-	    "dateModified": "2014-05-08T17:09:48.63Z",
-	    "parentGameCategoryId": 6,
-	    "rootGameCategoryId": 6,
-	    "gameId": 432
-	  },
-	  {
-	    "id": 434,
-	    "name": "Armor, Tools, and Weapons",
-	    "slug": "armor-weapons-tools",
-	    "avatarUrl": "https://media.forgecdn.net/avatars/6/47/635351498790409758.png",
-	    "dateModified": "2014-05-08T17:44:39.057Z",
-	    "parentGameCategoryId": 6,
-	    "rootGameCategoryId": 6,
-	    "gameId": 432
-	  }
-	 ]
+        [
+        {
+            "id": 423,
+            "name": "Map and Information",
+            "slug": "map-information",
+            "avatarUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+            "dateModified": "2014-05-08T17:42:23.74Z",
+            "parentGameCategoryId": 6,
+            "rootGameCategoryId": 6,
+            "gameId": 432
+        },
+        {
+            "id": 426,
+            "name": "Addons",
+            "slug": "mc-addons",
+            "avatarUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
+            "dateModified": "2014-05-08T17:09:48.63Z",
+            "parentGameCategoryId": 6,
+            "rootGameCategoryId": 6,
+            "gameId": 432
+        },
+        {
+            "id": 434,
+            "name": "Armor, Tools, and Weapons",
+            "slug": "armor-weapons-tools",
+            "avatarUrl": "https://media.forgecdn.net/avatars/6/47/635351498790409758.png",
+            "dateModified": "2014-05-08T17:44:39.057Z",
+            "parentGameCategoryId": 6,
+            "rootGameCategoryId": 6,
+            "gameId": 432
+        }
+        ]
 
 ## Get Game Timestamp [/api/v2/game/timestamp]
 ### Get Game Timestamp [GET]
 
 + Response 200 (application/json)
 
-	"2019-06-09T23:34:29.103Z"
+        "2019-06-09T23:34:29.103Z"
 
 ## Get Games List [/api/v2/game{?supportsAddons}]
 ### Get Games List [GET]
 + Parameters
-	+ supportsAddons (boolean, optional)
-		+ Default: 'true'
+    + supportsAddons (boolean, optional)
+        + Default: 'true'
 
 + Response 200 (application/json)
 
-	[
-	  {
-		"id": 432,
-		"name": "Minecraft",
-		"slug": "minecraft",
-		"dateModified": "2019-06-26T15:49:27.81Z",
-		"gameFiles": [
-		  {
-			"id": 34,
-			"gameId": 432,
-			"isRequired": true,
-			"fileName": "instance.json",
-			"fileType": 3,
-			"platformType": 4
-		  }
-		],
-		"gameDetectionHints": [
-		  {
-			"id": 9,
-			"hintType": 2,
-			"hintPath": "%Public%\\Games\\Minecraft",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 432
-		  }
-		],
-		"fileParsingRules": [],
-		"categorySections": [
-		  {
-			"id": 9,
-			"gameId": 432,
-			"name": "Texture Packs",
-			"packageType": 3,
-			"path": "resourcepacks",
-			"initialInclusionPattern": "([^\\/\\\\]+\\.zip)$",
-			"extraIncludePattern": "([^\\/\\\\]+\\.zip)$",
-			"gameCategoryId": 12
-		  },
-		  {
-			"id": 11,
-			"gameId": 432,
-			"name": "Modpacks",
-			"packageType": 5,
-			"path": "downloads",
-			"initialInclusionPattern": "$^",
-			"extraIncludePattern": null,
-			"gameCategoryId": 4471
-		  },
-		  {
-			"id": 8,
-			"gameId": 432,
-			"name": "Mods",
-			"packageType": 6,
-			"path": "mods",
-			"initialInclusionPattern": ".",
-			"extraIncludePattern": null,
-			"gameCategoryId": 6
-		  },
-		  {
-			"id": 10,
-			"gameId": 432,
-			"name": "Worlds",
-			"packageType": 1,
-			"path": "saves",
-			"initialInclusionPattern": ".",
-			"extraIncludePattern": null,
-			"gameCategoryId": 17
-		  }
-		],
-		"maxFreeStorage": 0,
-		"maxPremiumStorage": 0,
-		"maxFileSize": 0,
-		"addonSettingsFolderFilter": null,
-		"addonSettingsStartingFolder": null,
-		"addonSettingsFileFilter": null,
-		"addonSettingsFileRemovalFilter": null,
-		"supportsAddons": true,
-		"supportsPartnerAddons": false,
-		"supportedClientConfiguration": 3,
-		"supportsNotifications": true,
-		"profilerAddonId": 0,
-		"twitchGameId": 27471,
-		"clientGameSettingsId": 24
-	  },
-	  {
-		"id": 1,
-		"name": "World of Warcraft",
-		"slug": "wow",
-		"dateModified": "2019-06-26T15:49:20.887Z",
-		"gameFiles": [
-		  {
-			"id": 1,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WoW.exe",
-			"fileType": 2,
-			"platformType": 4
-		  },
-		  {
-			"id": 2,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WoW-64.exe",
-			"fileType": 2,
-			"platformType": 3
-		  },
-		  {
-			"id": 4,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "world.MPQ.lock",
-			"fileType": 4,
-			"platformType": 1
-		  },
-		  {
-			"id": 143,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "World of Warcraft.app",
-			"fileType": 2,
-			"platformType": 5
-		  },
-		  {
-			"id": 177,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WowB.exe",
-			"fileType": 2,
-			"platformType": 4
-		  },
-		  {
-			"id": 178,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WowB-64.exe",
-			"fileType": 2,
-			"platformType": 3
-		  },
-		  {
-			"id": 180,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WowT.exe",
-			"fileType": 2,
-			"platformType": 4
-		  },
-		  {
-			"id": 181,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "WoWT-64.exe",
-			"fileType": 2,
-			"platformType": 3
-		  },
-		  {
-			"id": 184,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "World of Warcraft Beta.app",
-			"fileType": 2,
-			"platformType": 5
-		  },
-		  {
-			"id": 185,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "World of Warcraft Public Test.app",
-			"fileType": 2,
-			"platformType": 5
-		  },
-		  {
-			"id": 341,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "World of Warcraft Test.app",
-			"fileType": 2,
-			"platformType": 5
-		  },
-		  {
-			"id": 342,
-			"gameId": 1,
-			"isRequired": false,
-			"fileName": "World of Warcraft Beta.app",
-			"fileType": 2,
-			"platformType": 5
-		  }
-		],
-		"gameDetectionHints": [
-		  {
-			"id": 1,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Blizzard Entertainment\\World of Warcraft",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 2,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 3,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\VirtualStore\\MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 4,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 5,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES%\\World of Warcraft",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 6,
-			"hintType": 2,
-			"hintPath": "%Public%\\Games\\World of Warcraft",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 10,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 22,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Blizzard Entertainment\\World of Warcraft\\PTR",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 23,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft\\PTR",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 24,
-			"hintType": 1,
-			"hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\VirtualStore\\MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft\\PTR",
-			"hintKey": "InstallPath",
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 30,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft Beta",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 31,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES%\\World of Warcraft Beta",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 54,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_retail_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 55,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES%\\World of Warcraft\\_retail_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 56,
-			"hintType": 2,
-			"hintPath": "%Public%\\Games\\World of Warcraft\\_retail_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 57,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_ptr_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 58,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES%\\World of Warcraft\\_ptr_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 59,
-			"hintType": 2,
-			"hintPath": "%Public%\\Games\\World of Warcraft\\_ptr_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 61,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_beta_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 62,
-			"hintType": 2,
-			"hintPath": "%PROGRAMFILES%\\World of Warcraft\\_beta_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 63,
-			"hintType": 2,
-			"hintPath": "%Public%\\Games\\World of Warcraft\\_beta_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 64,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft/_retail_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 65,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft/_ptr_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 66,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft/_beta_",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 67,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft Public Test",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  },
-		  {
-			"id": 68,
-			"hintType": 2,
-			"hintPath": "/Applications/World of Warcraft Beta",
-			"hintKey": null,
-			"hintOptions": 0,
-			"gameId": 1
-		  }
-		],
-		"fileParsingRules": [
-		  {
-			"commentStripPattern": "(?s)<!--.*?-->",
-			"fileExtension": ".xml",
-			"inclusionPattern": "(?i)<(?:Include|Script)\\s+file=[\"\"']((?:(?<!\\.\\.).)+)[\"\"']\\s*/>",
-			"gameId": 1,
-			"id": 0
-		  },
-		  {
-			"commentStripPattern": "(?m)\\s*#.*$",
-			"fileExtension": ".toc",
-			"inclusionPattern": "(?mi)^\\s*((?:(?<!\\.\\.).)+\\.(?:xml|lua))\\s*$",
-			"gameId": 1,
-			"id": 0
-		  }
-		],
-		"categorySections": [
-		  {
-			"id": 1,
-			"gameId": 1,
-			"name": "Addons",
-			"packageType": 1,
-			"path": "Interface\\Addons",
-			"initialInclusionPattern": "(?i)^([^/]+)[\\\\/]\\1\\.toc$",
-			"extraIncludePattern": "(?i)^[^/\\\\]+[/\\\\]Bindings\\.xml$",
-			"gameCategoryId": 1
-		  }
-		],
-		"maxFreeStorage": 0,
-		"maxPremiumStorage": 0,
-		"maxFileSize": 0,
-		"addonSettingsFolderFilter": "*",
-		"addonSettingsStartingFolder": "WTF/Account",
-		"addonSettingsFileFilter": "*.lua;AddOns.txt",
-		"addonSettingsFileRemovalFilter": "{Module}.lua",
-		"supportsAddons": true,
-		"supportsPartnerAddons": false,
-		"supportedClientConfiguration": 3,
-		"supportsNotifications": true,
-		"profilerAddonId": 43270,
-		"twitchGameId": 18122,
-		"clientGameSettingsId": 1
-	  }
-	]
+        [
+        {
+            "id": 432,
+            "name": "Minecraft",
+            "slug": "minecraft",
+            "dateModified": "2019-06-26T15:49:27.81Z",
+            "gameFiles": [
+            {
+                "id": 34,
+                "gameId": 432,
+                "isRequired": true,
+                "fileName": "instance.json",
+                "fileType": 3,
+                "platformType": 4
+            }
+            ],
+            "gameDetectionHints": [
+            {
+                "id": 9,
+                "hintType": 2,
+                "hintPath": "%Public%\\Games\\Minecraft",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 432
+            }
+            ],
+            "fileParsingRules": [],
+            "categorySections": [
+            {
+                "id": 9,
+                "gameId": 432,
+                "name": "Texture Packs",
+                "packageType": 3,
+                "path": "resourcepacks",
+                "initialInclusionPattern": "([^\\/\\\\]+\\.zip)$",
+                "extraIncludePattern": "([^\\/\\\\]+\\.zip)$",
+                "gameCategoryId": 12
+            },
+            {
+                "id": 11,
+                "gameId": 432,
+                "name": "Modpacks",
+                "packageType": 5,
+                "path": "downloads",
+                "initialInclusionPattern": "$^",
+                "extraIncludePattern": null,
+                "gameCategoryId": 4471
+            },
+            {
+                "id": 8,
+                "gameId": 432,
+                "name": "Mods",
+                "packageType": 6,
+                "path": "mods",
+                "initialInclusionPattern": ".",
+                "extraIncludePattern": null,
+                "gameCategoryId": 6
+            },
+            {
+                "id": 10,
+                "gameId": 432,
+                "name": "Worlds",
+                "packageType": 1,
+                "path": "saves",
+                "initialInclusionPattern": ".",
+                "extraIncludePattern": null,
+                "gameCategoryId": 17
+            }
+            ],
+            "maxFreeStorage": 0,
+            "maxPremiumStorage": 0,
+            "maxFileSize": 0,
+            "addonSettingsFolderFilter": null,
+            "addonSettingsStartingFolder": null,
+            "addonSettingsFileFilter": null,
+            "addonSettingsFileRemovalFilter": null,
+            "supportsAddons": true,
+            "supportsPartnerAddons": false,
+            "supportedClientConfiguration": 3,
+            "supportsNotifications": true,
+            "profilerAddonId": 0,
+            "twitchGameId": 27471,
+            "clientGameSettingsId": 24
+        },
+        {
+            "id": 1,
+            "name": "World of Warcraft",
+            "slug": "wow",
+            "dateModified": "2019-06-26T15:49:20.887Z",
+            "gameFiles": [
+            {
+                "id": 1,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WoW.exe",
+                "fileType": 2,
+                "platformType": 4
+            },
+            {
+                "id": 2,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WoW-64.exe",
+                "fileType": 2,
+                "platformType": 3
+            },
+            {
+                "id": 4,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "world.MPQ.lock",
+                "fileType": 4,
+                "platformType": 1
+            },
+            {
+                "id": 143,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "World of Warcraft.app",
+                "fileType": 2,
+                "platformType": 5
+            },
+            {
+                "id": 177,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WowB.exe",
+                "fileType": 2,
+                "platformType": 4
+            },
+            {
+                "id": 178,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WowB-64.exe",
+                "fileType": 2,
+                "platformType": 3
+            },
+            {
+                "id": 180,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WowT.exe",
+                "fileType": 2,
+                "platformType": 4
+            },
+            {
+                "id": 181,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "WoWT-64.exe",
+                "fileType": 2,
+                "platformType": 3
+            },
+            {
+                "id": 184,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "World of Warcraft Beta.app",
+                "fileType": 2,
+                "platformType": 5
+            },
+            {
+                "id": 185,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "World of Warcraft Public Test.app",
+                "fileType": 2,
+                "platformType": 5
+            },
+            {
+                "id": 341,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "World of Warcraft Test.app",
+                "fileType": 2,
+                "platformType": 5
+            },
+            {
+                "id": 342,
+                "gameId": 1,
+                "isRequired": false,
+                "fileName": "World of Warcraft Beta.app",
+                "fileType": 2,
+                "platformType": 5
+            }
+            ],
+            "gameDetectionHints": [
+            {
+                "id": 1,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Blizzard Entertainment\\World of Warcraft",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 2,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 3,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\VirtualStore\\MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 4,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 5,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES%\\World of Warcraft",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 6,
+                "hintType": 2,
+                "hintPath": "%Public%\\Games\\World of Warcraft",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 10,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 22,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Blizzard Entertainment\\World of Warcraft\\PTR",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 23,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft\\PTR",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 24,
+                "hintType": 1,
+                "hintPath": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\VirtualStore\\MACHINE\\SOFTWARE\\Blizzard Entertainment\\World of Warcraft\\PTR",
+                "hintKey": "InstallPath",
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 30,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft Beta",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 31,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES%\\World of Warcraft Beta",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 54,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_retail_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 55,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES%\\World of Warcraft\\_retail_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 56,
+                "hintType": 2,
+                "hintPath": "%Public%\\Games\\World of Warcraft\\_retail_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 57,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_ptr_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 58,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES%\\World of Warcraft\\_ptr_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 59,
+                "hintType": 2,
+                "hintPath": "%Public%\\Games\\World of Warcraft\\_ptr_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 61,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES(x86)%\\World of Warcraft\\_beta_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 62,
+                "hintType": 2,
+                "hintPath": "%PROGRAMFILES%\\World of Warcraft\\_beta_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 63,
+                "hintType": 2,
+                "hintPath": "%Public%\\Games\\World of Warcraft\\_beta_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 64,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft/_retail_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 65,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft/_ptr_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 66,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft/_beta_",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 67,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft Public Test",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            },
+            {
+                "id": 68,
+                "hintType": 2,
+                "hintPath": "/Applications/World of Warcraft Beta",
+                "hintKey": null,
+                "hintOptions": 0,
+                "gameId": 1
+            }
+            ],
+            "fileParsingRules": [
+            {
+                "commentStripPattern": "(?s)<!--.*?-->",
+                "fileExtension": ".xml",
+                "inclusionPattern": "(?i)<(?:Include|Script)\\s+file=[\"\"']((?:(?<!\\.\\.).)+)[\"\"']\\s*/>",
+                "gameId": 1,
+                "id": 0
+            },
+            {
+                "commentStripPattern": "(?m)\\s*#.*$",
+                "fileExtension": ".toc",
+                "inclusionPattern": "(?mi)^\\s*((?:(?<!\\.\\.).)+\\.(?:xml|lua))\\s*$",
+                "gameId": 1,
+                "id": 0
+            }
+            ],
+            "categorySections": [
+            {
+                "id": 1,
+                "gameId": 1,
+                "name": "Addons",
+                "packageType": 1,
+                "path": "Interface\\Addons",
+                "initialInclusionPattern": "(?i)^([^/]+)[\\\\/]\\1\\.toc$",
+                "extraIncludePattern": "(?i)^[^/\\\\]+[/\\\\]Bindings\\.xml$",
+                "gameCategoryId": 1
+            }
+            ],
+            "maxFreeStorage": 0,
+            "maxPremiumStorage": 0,
+            "maxFileSize": 0,
+            "addonSettingsFolderFilter": "*",
+            "addonSettingsStartingFolder": "WTF/Account",
+            "addonSettingsFileFilter": "*.lua;AddOns.txt",
+            "addonSettingsFileRemovalFilter": "{Module}.lua",
+            "supportsAddons": true,
+            "supportsPartnerAddons": false,
+            "supportedClientConfiguration": 3,
+            "supportsNotifications": true,
+            "profilerAddonId": 43270,
+            "twitchGameId": 18122,
+            "clientGameSettingsId": 1
+        }
+        ]
 
 ## Get Game Info [/api/v2/game/{GameID}]
 ### Get Game Info [GET]
 + Parameters
-	+ GameID: `432` (integer)
+    + GameID: `432` (integer)
 
 + Response 200 (application/json)
 
-	{
-	  "id": 432,
-	  "name": "Minecraft",
-	  "slug": "minecraft",
-	  "dateModified": "2019-06-26T15:49:27.81Z",
-	  "gameFiles": [
-		{
-		  "id": 34,
-		  "gameId": 432,
-		  "isRequired": true,
-		  "fileName": "instance.json",
-		  "fileType": 3,
-		  "platformType": 4
-		}
-	  ],
-	  "gameDetectionHints": [
-		{
-		  "id": 9,
-		  "hintType": 2,
-		  "hintPath": "%Public%\\Games\\Minecraft",
-		  "hintKey": null,
-		  "hintOptions": 0,
-		  "gameId": 432
-		}
-	  ],
-	  "fileParsingRules": [],
-	  "categorySections": [
-		{
-		  "id": 9,
-		  "gameId": 432,
-		  "name": "Texture Packs",
-		  "packageType": 3,
-		  "path": "resourcepacks",
-		  "initialInclusionPattern": "([^\\/\\\\]+\\.zip)$",
-		  "extraIncludePattern": "([^\\/\\\\]+\\.zip)$",
-		  "gameCategoryId": 12
-		},
-		{
-		  "id": 11,
-		  "gameId": 432,
-		  "name": "Modpacks",
-		  "packageType": 5,
-		  "path": "downloads",
-		  "initialInclusionPattern": "$^",
-		  "extraIncludePattern": null,
-		  "gameCategoryId": 4471
-		},
-		{
-		  "id": 8,
-		  "gameId": 432,
-		  "name": "Mods",
-		  "packageType": 6,
-		  "path": "mods",
-		  "initialInclusionPattern": ".",
-		  "extraIncludePattern": null,
-		  "gameCategoryId": 6
-		},
-		{
-		  "id": 10,
-		  "gameId": 432,
-		  "name": "Worlds",
-		  "packageType": 1,
-		  "path": "saves",
-		  "initialInclusionPattern": ".",
-		  "extraIncludePattern": null,
-		  "gameCategoryId": 17
-		}
-	  ],
-	  "maxFreeStorage": 0,
-	  "maxPremiumStorage": 0,
-	  "maxFileSize": 0,
-	  "addonSettingsFolderFilter": null,
-	  "addonSettingsStartingFolder": null,
-	  "addonSettingsFileFilter": null,
-	  "addonSettingsFileRemovalFilter": null,
-	  "supportsAddons": true,
-	  "supportsPartnerAddons": false,
-	  "supportedClientConfiguration": 3,
-	  "supportsNotifications": true,
-	  "profilerAddonId": 0,
-	  "twitchGameId": 27471,
-	  "clientGameSettingsId": 24
-	}
-
-## Elerium AddonClientService []
-### Elerium AddonClientService [GET]
-+ Request Plain Text Message
-    + Headers
-            Accept: text/plain
-
-+ Response 200 (text/plain)
-	+ Body
-		Elerium AddonClientService (50f50c7)
+        {
+        "id": 432,
+        "name": "Minecraft",
+        "slug": "minecraft",
+        "dateModified": "2019-06-26T15:49:27.81Z",
+        "gameFiles": [
+            {
+            "id": 34,
+            "gameId": 432,
+            "isRequired": true,
+            "fileName": "instance.json",
+            "fileType": 3,
+            "platformType": 4
+            }
+        ],
+        "gameDetectionHints": [
+            {
+            "id": 9,
+            "hintType": 2,
+            "hintPath": "%Public%\\Games\\Minecraft",
+            "hintKey": null,
+            "hintOptions": 0,
+            "gameId": 432
+            }
+        ],
+        "fileParsingRules": [],
+        "categorySections": [
+            {
+            "id": 9,
+            "gameId": 432,
+            "name": "Texture Packs",
+            "packageType": 3,
+            "path": "resourcepacks",
+            "initialInclusionPattern": "([^\\/\\\\]+\\.zip)$",
+            "extraIncludePattern": "([^\\/\\\\]+\\.zip)$",
+            "gameCategoryId": 12
+            },
+            {
+            "id": 11,
+            "gameId": 432,
+            "name": "Modpacks",
+            "packageType": 5,
+            "path": "downloads",
+            "initialInclusionPattern": "$^",
+            "extraIncludePattern": null,
+            "gameCategoryId": 4471
+            },
+            {
+            "id": 8,
+            "gameId": 432,
+            "name": "Mods",
+            "packageType": 6,
+            "path": "mods",
+            "initialInclusionPattern": ".",
+            "extraIncludePattern": null,
+            "gameCategoryId": 6
+            },
+            {
+            "id": 10,
+            "gameId": 432,
+            "name": "Worlds",
+            "packageType": 1,
+            "path": "saves",
+            "initialInclusionPattern": ".",
+            "extraIncludePattern": null,
+            "gameCategoryId": 17
+            }
+        ],
+        "maxFreeStorage": 0,
+        "maxPremiumStorage": 0,
+        "maxFileSize": 0,
+        "addonSettingsFolderFilter": null,
+        "addonSettingsStartingFolder": null,
+        "addonSettingsFileFilter": null,
+        "addonSettingsFileRemovalFilter": null,
+        "supportsAddons": true,
+        "supportsPartnerAddons": false,
+        "supportedClientConfiguration": 3,
+        "supportsNotifications": true,
+        "profilerAddonId": 0,
+        "twitchGameId": 27471,
+        "clientGameSettingsId": 24
+        }

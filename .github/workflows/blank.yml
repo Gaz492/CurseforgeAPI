@@ -16,4 +16,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
-        BUILD_SCRIPT: npm i snowboard && ./node_modules/.bin/snowboard html -o index.html apiary.apib 
+        BUILD_SCRIPT: wget https://github.com/bukalapak/snowboard/releases/download/v3.3.0/snowboard-v3.3.0.linux-amd64.tar.gz && tar -zxvf snowboard-v3.3.0.linux-amd64.tar.gz && ./snowboard html -o index.html apiary.apib 

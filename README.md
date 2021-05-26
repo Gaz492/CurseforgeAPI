@@ -1,4 +1,4 @@
-# Go To https://twitchappapi.docs.apiary.io or https://gaz492.github.io/TwitchAPI/
+# Go To https://curseforgeapi.docs.apiary.io/ or https://gaz492.github.io/TwitchAPI/
 
 # I DID NOT MAKE THE API
 
